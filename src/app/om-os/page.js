@@ -3,6 +3,7 @@ import Spotify from "../components/some/Spotify";
 import SoMeEmbed from "../components/some/SoMeEmbed";
 import Link from "next/link";
 import Button from "../components/ui/Button";
+import InstagramFeed from "../components/some/instaAPI";
 
 export default function AboutPage() {
   return (
@@ -48,6 +49,8 @@ export default function AboutPage() {
         <h3>Lyt til vores musik</h3>
         <Spotify />
       </div>
+
+      <InstagramFeed className="cursor-pointer" />
     </div>
   );
 }
