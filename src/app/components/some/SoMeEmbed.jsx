@@ -1,11 +1,13 @@
 import Instagram from "./Instagram";
 import TikTokEmbed from "./Tiktok";
 import YouTubeFeed from "./Youtube";
+import InstagramFeed from "./instaAPI";
 
 export default function SoMeEmbed() {
   return (
     <div className="grid grid-cols-1 gap-7">
-      <Instagram
+      <InstagramFeed />
+      {/* <Instagram
         posts={[
           "https://www.instagram.com/p/DSSZ1XaDMI_/",
           "https://www.instagram.com/p/DRkHkAZjHap/",
@@ -14,7 +16,7 @@ export default function SoMeEmbed() {
           "https://www.instagram.com/p/DJ4MWJ-sJF8/",
           "https://www.instagram.com/p/DIv5cNrM7vU/",
         ]}
-      />
+      /> */}
       <TikTokEmbed
         tiktokPosts={[
           "https://www.tiktok.com/@dansermedpiger/video/7583806874491915542",
