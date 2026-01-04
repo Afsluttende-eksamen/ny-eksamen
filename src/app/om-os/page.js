@@ -49,8 +49,6 @@ export default function AboutPage() {
         <h3>Lyt til vores musik</h3>
         <Spotify />
       </div>
-
-      <InstagramFeed className="cursor-pointer" />
     </div>
   );
 }
