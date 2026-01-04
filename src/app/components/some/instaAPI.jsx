@@ -1,4 +1,5 @@
 import { getInstagramPosts } from "@/lib/api/instagram";
+import Link from "next/link";
 import { FaInstagram } from "react-icons/fa";
 
 export default async function InstagramFeed() {
@@ -6,10 +7,16 @@ export default async function InstagramFeed() {
 
   return (
     <section className="mt-8">
-      <h3 className="mb-4 flex items-center gap-2 text-2xl font-semibold">
-        <FaInstagram /> Instagram
-      </h3>
-
+      '
+      <Link
+        href="https://www.instagram.com/dansermedpiger/"
+        target="_blank"
+        className="hover:underline flex items-center gap-3"
+      >
+        <h3 className="mb-4 flex items-center gap-2 text-2xl font-semibold">
+          <FaInstagram /> Instagram
+        </h3>
+      </Link>
       <div className="flex gap-4 overflow-x-auto scroll-smooth pb-2   [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         {posts.map((post) => (
           <a
