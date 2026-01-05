@@ -2,6 +2,7 @@ import { Archivo, Newsreader } from "next/font/google";
 import "./globals.css";
 import NavigationWrapper from "./components/layout/NavigationWrapper";
 import Footer from "./components/layout/Footer";
+import { Toaster } from "sonner";
 
 const archivo = Archivo({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
         <NavigationWrapper />
         <main>{children}</main>
         <Footer />
+        <Toaster position="top-right" />
       </body>
     </html>
   );
