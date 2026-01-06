@@ -16,6 +16,7 @@ export default function SpotifyArtistSection({
     )
       .then((res) => res.json())
       .then((data) => {
+        console.log(data.tracks[0]);
         setTracks(data.tracks || []);
       });
   }, [artistId, market, topTracksLimit]);
